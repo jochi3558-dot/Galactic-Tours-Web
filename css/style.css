@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: 1 0 auto; 
+    background-image: url('../images/spacemain2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    padding: 50px;
+    gap: 40px;
+    align-items: start; 
+}
+
+footer {
+    flex-shrink: 0;
+    background-image: url('../images/spacemain2.jpg');
+    background-size: cover;
+}
+
+
+.navigacija {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 50px;
+    border-bottom: 4px solid rgb(46, 46, 206);
+    box-shadow: 0 0 40px #00fbff;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.space-lista {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.space-lista a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.space-lista a:hover {
+    color: #00fbff;
+    text-shadow: 0 0 10px #00fbff;
+}
+
+
+.lansiraj {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.lansiraj input {
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 2px solid #00fbff;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    outline: none;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 251, 255, 0.3);
+}
+
+.lansiraj input:focus {
+    box-shadow: 0 0 20px #00fbff;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.lansiraj button {
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    background: #00fbff;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 0 0 15px #00fbff;
+}
+
+.lansiraj button:hover {
+    transform: scale(1.1);
+    background: white;
+    box-shadow: 0 0 25px white;
+}
+
+
+.hero {
+    background-image: url('../images/herospace.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: blue solid 5px;
+}
+
+.hero-promo h1 {
+    color: white;
+    font-size: 70px;
+    text-shadow: 0 0 20px black;
+    margin-bottom: 30px;
+}
+
+.hero-promo button {
+    padding: 20px 45px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #00fbff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 20px #00fbff;
+    transition: 0.4s;
+}
+
+.hero-promo button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 35px #00fbff;
+}
+
+
+aside h2 {
+    color: #00fbff;
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.destinacije-lista ul {
+    list-style: none;
+    border: 1px solid rgba(0, 251, 255, 0.3);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+
+.destinacije-lista li {
+    margin: 15px 0;
+}
+
+.destinacije-lista li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+
+.destinacije-lista li a:hover {
+    color: #00fbff;
+    border: 2px solid #00fbff;
+    box-shadow: inset 0 0 10px #00fbff, 0 0 10px #00fbff;
+    border-radius: 10px;
+}
+
+
+.ponuda {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.letelice {
+    background: rgba(0, 0, 0, 0.75);
+    border: 2px solid #00fbff;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    transition: 0.4s;
+}
+
+.letelice:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px #00fbff;
+}
+
+.letelice img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border: 2px solid #00fbff;
+    margin-bottom: 15px;
+}
+
+.letelice h3 { color: #00fbff; margin-bottom: 10px; }
+.letelice p { font-size: 15px; color: #ccc; margin-bottom: 15px; line-height: 1.5; }
+
+.rezervisi-btn {
+    padding: 12px 25px;
+    background: #00fbff;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #00fbff;
+}
+
+.rezervisi-btn:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+
+.footer-sadrzaj {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-top: 4px solid #952db4;
+}
+
+.ime h2 { text-decoration: underline #00fbff; }
+
+
+@media (max-width: 768px) {
+    main { 
+        grid-template-columns: 1fr; 
+        padding: 20px;
+    }
+    .navigacija { 
+        flex-direction: column; 
+        gap: 20px; 
+    }
+    .hero-promo h1 {
+        font-size: 45px;
+    }
+}

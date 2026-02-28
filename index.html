@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALAXY | Početna</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navigacija">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Space">
+            <h1>GALAXY</h1>
+        </div>
+        <ul class="space-lista">
+            <li><a href="svemirskiturizam.html" style="color:white; text-decoration:none;">Početna</a></li>
+            <li><a href="loginspace.html" style="color:white; text-decoration:none;">Prijava</a></li>
+         <li><a href="checkoutspace.html">Korpa</a></li>
+<li style="list-style: none;">
+    <span onclick="openCart()" style="cursor:pointer; font-size: 20px;">🛒</span>
+</li>
+            
+        </ul>
+        <div class="lansiraj">
+            <input type="text" placeholder="Traži galaksiju">
+            <button type="button">Lansiraj</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-promo">
+            <h1>Tvoja karta za zvezde</h1>
+            <button type="button" onclick="window.location.href='loginspace.html'">Poleti odmah</button>
+        </div>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Destinacije</h2>
+            <div class="destinacije-lista">
+                <ul>
+                    <li><a href="#">Mesec</a></li>
+                    <li><a href="#">Saturn</a></li>
+                    <li><a href="#">Mars</a></li>
+                    <li><a href="#">Jupiter</a></li>
+                </ul>
+            </div>
+        </aside>
+        <section class="ponuda">
+            <div class="letelice">
+                <img src="images/Falcon.jpeg" alt="Falcon">
+                <h3>Falcon Heavy</h3>
+                <p>Iskusite ubrzanje koje prkosi gravitaciji. Idealna za brze skokove do lunarne orbite uz maksimalnu sigurnost.</p>
+                <span class="cena">300 Galaxy kredita</span>
+                <button class="rezervisi-btn" onclick="dodajNaIznos(300)">Rezerviši</button>
+            </div>
+            <div class="letelice">
+                <img src="images/Enterprise.jpeg" alt="Enterprise">
+                <h3>USS Enterprise</h3>
+                <p>Luksuzna krstarica za međuzvezdana putovanja. Uživajte u pogledu na Saturnove prstenove iz VIP lože sa nultom gravitacijom.</p>
+                <span class="cena">550 Galaxy kredita</span>
+                <button class="rezervisi-btn" onclick="dodajNaIznos(550)">Rezerviši</button>
+            </div>
+            <div class="letelice">
+                <img src="images/voyager.jpeg" alt="Voyager">
+                <h3>Voyager One</h3>
+                <p>Ekspedicija u nepoznato. Naša najizdržljivija sonda pretvorena u putnički brod za istraživanje dubokog svemira i nebula.</p>
+                <span class="cena">800 Galaxy kredita</span>
+                <button class="rezervisi-btn" onclick="dodajNaIznos(800)">Rezerviši</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-sadrzaj">
+            <div class="ime"><h2>Jovana Božović</h2></div>
+            <div class="kontakt"><p>Mars na vodi, Blok 70-X | 2026</p></div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

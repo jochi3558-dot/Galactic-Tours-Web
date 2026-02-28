@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>GALAXY | Prijava</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navigacija">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Space">
+            <h1>GALAXY</h1>
+        </div>
+        <ul class="space-lista">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="loginspace.html">Prijava</a></li>
+            <li><a href="checkoutspace.html">Korpa</a></li>
+<li style="list-style: none;">
+    <span onclick="openCart()" style="cursor:pointer; font-size: 20px;">🛒</span>
+</li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside>
+            <h2>Pristup</h2>
+            <p style="color: white; text-align: center; padding: 20px;">Dobrodošli nazad, kapetane. Unesite vaše podatke za pristup komandnoj tabli.</p>
+        </aside>
+        
+        <section style="display: flex; justify-content: center; align-items: center;">
+            <div class="letelice" style="max-width: 500px; width: 100%; padding: 50px;">
+                <h2 style="color: #00fbff; margin-bottom: 30px;">AUTORIZACIJA</h2>
+                <input type="text" id="email-field" placeholder="Korisničko ime" 
+                       style="width: 100%; padding: 15px; margin-bottom: 20px; background: rgba(0,0,0,0.5); border: 2px solid #00fbff; color: white; border-radius: 25px;">
+                <input type="password" id="pass-field" placeholder="Lozinka" 
+                       style="width: 100%; padding: 15px; margin-bottom: 30px; background: rgba(0,0,0,0.5); border: 2px solid #00fbff; color: white; border-radius: 25px;">
+                <button class="rezervisi-btn" onclick="handleLogin()" style="width: 100%;">PRIJAVI SE</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-sadrzaj">
+            <div class="ime"><h2>Jovana Božović</h2></div>
+            <div class="kontakt"><p>Mars na vodi, Blok 70-X | 2026</p></div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

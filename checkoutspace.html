@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>GALAXY | Korpa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navigacija">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Space">
+            <h1>GALAXY</h1>
+        </div>
+        <ul class="space-lista">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="loginspace.html">Prijava</a></li>
+            <li><a href="checkoutspace.html">Korpa</a></li>
+<li style="list-style: none;">
+    <span onclick="openCart()" style="cursor:pointer; font-size: 20px;">🛒</span>
+</li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside>
+            <h2>Vaučer</h2>
+            <div class="destinacije-lista">
+                <input type="text" id="promo-input" placeholder="Kod: SAVE10" 
+                       style="width: 80%; padding: 10px; margin: 20px auto; display: block; background: transparent; border: 1px solid #00fbff; color: white;">
+                <button class="rezervisi-btn" onclick="validateAndNotify()" style="font-size: 14px; padding: 10px;">PRIMENI</button>
+            </div>
+        </aside>
+
+        <section style="display: flex; justify-content: center; align-items: center;">
+            <div class="letelice" style="max-width: 600px; width: 100%; padding: 40px;">
+                <h2 style="color: #00fbff; margin-bottom: 20px;">VAŠA PORUDŽBINA</h2>
+                <div style="border-bottom: 1px solid #00fbff; padding: 20px 0;">
+                    <p>Svemirska taksa: 10%</p>
+                    <p>Osiguranje od crnih rupa: Uključeno</p>
+                </div>
+                <h3 style="margin: 30px 0;">UKUPNO: <span style="color: #00fbff;">45,000 ETH</span></h3>
+                <button class="rezervisi-btn" onclick="alert('Lansiranje uplate...')">POTVRDI TRANSAKCIJU</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-sadrzaj">
+            <div class="ime"><h2>Jovana Božović</h2></div>
+            <div class="kontakt"><p>Mars na vodi, Blok 70-X | 2026</p></div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
